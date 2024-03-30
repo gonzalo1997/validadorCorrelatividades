@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Materia {
+- String nombre
+- List Materia
++ void agregarMateriaCorrelativa()
++ List obtenerMateriasCorrelativas()
+}
+
+class Alumno {
+- String nombre
+- List materiasAprobadas
++ void agregarMateriaAprobada()
++ List obtenerMateriasAprobadas()
+}
+
+class Inscripcion {
++ bool aprobada()
+}
+
+Inscripcion ..> Alumno
+Inscripcion ..> Materia
+Alumno --> Materia
+@enduml
