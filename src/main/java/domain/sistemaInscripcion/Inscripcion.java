@@ -4,6 +4,7 @@ import domain.usuariosInscripcion.Alumno;
 import domain.usuariosInscripcion.Materia;
 
 import java.util.List;
+import java.util.ArrayList;
 
 public class Inscripcion {
     public static boolean aprobada(Alumno alumno, Materia materia){
